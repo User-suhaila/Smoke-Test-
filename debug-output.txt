@@ -1,0 +1,39 @@
+﻿node.exe : npm notice run survey-module-automation-with-javascript@1.0.0 npx
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Users\user\AppData\Roaming\n ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice run ...cript@1.0.0 npx:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice run playwright test tests/datastore.spec.js --headed --reporter=list
+Γùç injected env (3) from .env // tip: Γùê encrypted .env [www.dotenvx.com]
+Γùç injected env (4) from .env // tip: Γîÿ suppress logs { quiet: true }
+
+Running 1 test using 1 worker
+
+Γùç injected env (0) from .env // tip: Γîÿ override existing { override: true }
+Γùç injected env (4) from .env // tip: Γîÿ enable debugging { debug: true }
+  x  1 [chromium] ΓÇ║ tests\datastore.spec.js:26:3 ΓÇ║ Datastore Module - End to End ΓÇ║ Create datastore, configure columns, add employees, and save (22.6s)
+
+
+  1) [chromium] ΓÇ║ tests\datastore.spec.js:26:3 ΓÇ║ Datastore Module - End to End ΓÇ║ Create datastore, configure columns, add employees, and save ΓÇ║ Navigate to Datastore page 
+
+    Error: locator.count: Target page, context or browser has been closed
+
+      55 |       // Check for any element with title containing "Datastore" or "Create"
+      56 |       const titledElements = page.locator('[title*="Datastore"], [title*="datastore"], [title*="Create"], [title*="create"]');
+    > 57 |       const titledCount = await titledElements.count();
+         |                                                ^
+      58 |       debugInfo.push('Elements with title containing Datastore/Create: ' + titledCount);
+      59 |       for (let i = 0; i < titledCount; i++) {
+      60 |         const el = titledElements.nth(i);
+        at C:\Survey Module Automation with JAVASCRIPT\tests\datastore.spec.js:57:48
+
+    attachment #6: video (video/webm) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+    test-results\datastore-Datastore-Module-414a4-umns-add-employees-and-save-chromium\video.webm
+    ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+
+    Error Context: test-results\datastore-Datastore-Module-414a4-umns-add-employees-and-save-chromium\error-context.md
+
+  1 failed
+    [chromium] ΓÇ║ tests\datastore.spec.js:26:3 ΓÇ║ Datastore Module - End to End ΓÇ║ Create datastore, configure columns, add employees, and save 

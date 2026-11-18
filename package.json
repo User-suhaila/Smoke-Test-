@@ -1,0 +1,30 @@
+{
+  "name": "survey-module-automation-with-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "full": "playwright test \"tests/Smoke Test.spec.js\" --headed",
+    "datastore": "playwright test tests/datastore.spec.js --headed",
+    "survey": "playwright test tests/survey.spec.js --headed",
+    "template": "playwright test tests/templateCreation.spec.js --headed",
+    "campaign": "playwright test tests/campaignCreation.spec.js --headed",
+    "test:report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "allure-playwright": "^3.10.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

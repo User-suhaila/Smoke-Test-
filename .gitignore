@@ -1,0 +1,15 @@
+# Environment — contains real credentials, never commit
+.env
+
+# Node dependencies
+node_modules/
+
+# Playwright HTML report output
+playwright-report/
+
+# Playwright test artifacts
+test-results/
+
+# Allure report artifacts
+allure-results/
+allure-report/
